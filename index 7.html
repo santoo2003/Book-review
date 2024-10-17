@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
   </head>
   <body>
     <div class="container">
@@ -64,7 +65,8 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-4"> <img src="img_7/7.jpeg" alt="" height="550"> 
+            <div class="col-md-4">
+              <a href="img_7/7.jpeg"data-name="seven"> <img src="img_7/7.jpeg" alt="" height="550"> </a>
             </div>
             <br>
             <div class="col-md-8" style=" font-family: Mitr, sans-serif;
@@ -79,6 +81,26 @@
            ถือว่าเรื่องนี้ประสบความสำเร็จเป็นอย่างมากในเรื่องของตัวพลอตเรื่องที่ถูกคิดมาอย่างดี การเรียบเรียงเนื้อหาของผู้เขียนที่ไม่น่าเบื่อและยังชวนให้ติดตามเนื้อเรื่องต่อไป ด้วยองค์ประกอบทั้งหลายของหนังสือเรื่องนี้ทำให้ตัวผู้อ่านอย่างฉันเข้าถึงแก่นของหนังสือแนวระทึก, สืบสวนจนไม่อยากวางเรื่องนี้ได้จนจบเป็นเรื่องแรกของชีวิต </p>
             </div>
         </div>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">คลิ๊กเพื่อแสดงความคิดเห็น</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">แสดงความเห็น</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                สามารถพิมพ์แสดงความคิดเห็นได้จากลิ้งนี้
+        
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <br>
         <div class="row">
             <div class="col-md-10"> <img src="img_7/tag.jpeg" alt="">
@@ -98,5 +120,6 @@
     
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
